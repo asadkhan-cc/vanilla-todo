@@ -1,45 +1,51 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Todo App</title>
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO Task</title>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div class="container">
-      <p>
-        <label for="new-task">Add Item</label>
-        <input id="new-task" type="text">
-        <button>Add</button>
-      </p>
-      
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks">
-        <li>
-          <input type="checkbox">
-          <label>Pay Bills</label>
-          <input type="text">
-          <button class="edit">Edit</button>
-          <button class="delete">Delete</button>
-        </li>
-        <li class="editMode">
-          <input type="checkbox">
-          <label>Go Shopping</label>
-          <input type="text" value="Go Shopping">
-          <button class="edit">Edit</button>
-          <button class="delete">Delete</button>
-        </li>
-      </ul>
-      
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked="">
-          <label>See the Doctor</label>
-          <input type="text">
-          <button class="edit">Edit</button>
-          <button class="delete">Delete</button>
-        </li>
-      </ul>
+      <header class="text-9xl text-center">
+        <h1>TODO List App</h1>
+      </header>
+      <div class="w-max mt-10 m-auto">
+
+        <!-- input form start here  -->
+        <form id="inputForm">
+          <input
+            class="p-5 border rounded-full bg-gray-200 m-2"
+            required
+            id="inp_validator"
+            type="text"
+            placeholder="Add Todo"
+          />
+          <!-- <button class="p-5 bg-gray-200 rounded-full m-2" type="submit">
+            ADD
+          </button> -->
+
+          <input class="p-5 bg-gray-200 rounded-full m-2" type="submit" value="ADD"  />
+        </form>
+
+        <!-- input form end here  -->
+
+
+        <div id="output div" class="w-max mt-10 m-auto">
+          <ol>
+            <li>asdasd</li>
+          </ol>
+        </div>
+      </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
